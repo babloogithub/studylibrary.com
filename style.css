@@ -1,0 +1,236 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font and Background Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c0be9;
+    color: #eceaee;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+nav ul, nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul.mobile-links {
+        display: none;
+    }
+
+    nav ul.mobile-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul, .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+    }
+
+    nav ul.mobile-links {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul.mobile-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#library-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Change 'left' to 'right' */
+}
+
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Event Styles */
+.event {
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Back to Site Button Styles */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007BFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.back-button a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Logo */
+.responsive-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.event {
+    background-color: #2c0be9; /* Change this color to your preferred event background color */
+    color: #fff; /* Text color for events */
+}
+footer {
+    background-color: #e0dfe6; /* Change this color to your preferred footer color */
+    color: #0ad42c; /* Text color for the footer */
+    text-align: center;
+}
